@@ -8,7 +8,7 @@ include 'menu.php';
 	<title>Formulario de Altas</title>
 	<link rel="stylesheet" href="../phpdeto/css/respuestas.css">
 	</head>
-	<body>
+	<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
 	<h3 class="tablatitulo">LISTADO DE LOS REGISTRO DE LA TABLA</h3>
 
 	<table class="tabla">

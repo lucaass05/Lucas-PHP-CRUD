@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 179, 141);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 193, 162);
+    height: 120px;
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(65, 63, 62);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 12px;
+    color: rgb(175, 111, 74);
+    background-color: rgb(237, 151, 101);
+    margin: 1px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.menu a:hover{
+    font-size: 30px;
+    color: rgb(130, 63, 30);;
+    border-radius: 10px;
+}

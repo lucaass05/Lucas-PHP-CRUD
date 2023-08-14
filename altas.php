@@ -24,7 +24,7 @@ echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>"."<h3>".$cor."<
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(apellido, nombre, edad, correo, contraseña, user) VALUES ('$ape','$nom','$ed','$cor','$con','$user')";
+$cadena= "INSERT INTO personas(apellido, nombre, edad, correo, clave, user) VALUES ('$ape','$nom','$ed','$cor','$con','$user')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

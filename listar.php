@@ -19,6 +19,9 @@ include 'menu.php';
 			<th>Apellido</th>
 			<th>Nombre</th>
 			<th>Edad</th>
+			<th>Correo</th>
+			<th>Contraseña</th>
+			<th>Usuario</th>
 			</tr>
 		</thead>
 	<?php 

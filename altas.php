@@ -15,7 +15,7 @@ $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
 $cor = $_POST['correo'];
 $con = $_POST['contraseña'];
-$user = $_POST['user'];
+$user = $_POST['usuario'];
 
 // salida de informacion
 

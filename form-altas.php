@@ -42,7 +42,7 @@ include 'menu.php';
 
 		<div class="grupoInputs">
 		<label for="nombre">Nombre de Usuario:</label>
-		<input type="text" name="user"><br>
+		<input type="text" name="usuario"><br>
         </div>
 
 		<div class="btn-submit">
@@ -51,7 +51,7 @@ include 'menu.php';
 	</form>
 </div>
 <div class="img">
-	<img src="../PhpEjemplo-main/img/unnamed.jpg" alt="">
+	<img src="../phpdeto/img/unnamed.jpg" alt="">
 </div>
 	
 	

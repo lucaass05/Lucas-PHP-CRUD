@@ -29,13 +29,13 @@ include 'menu.php';
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "SELECT * FROM persona ";
+$cadena= "SELECT * FROM personas ";
 
 $consulta = mysqli_query($Conexion,$cadena);
 
 while(  $registro = mysqli_fetch_row($consulta)   ){
 	echo "<tr class='trmain'>";
-	echo "<th>".$registro[0]."</th>"."<th>".$registro[1]."</th>"."<th>".$registro[2]."</th>"."<th>".$registro[3]."</th>";
+	echo "<th>".$registro[0]."</th>"."<th>".$registro[1]."</th>"."<th>".$registro[2]."</th>"."<th>".$registro[3]."</th><th>".$registro[4]."</th>"."<th>".$registro[5]."</th>"."<th>".$registro[6]."</th>";
 	echo "</tr>";
 }
  ?>

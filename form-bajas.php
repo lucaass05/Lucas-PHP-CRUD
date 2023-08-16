@@ -15,8 +15,8 @@ include 'menu.php';
 	<h3 class="altaTitulo">FORMULARIO DE BAJA</h3>
 	<form class="altaInput" action="bajas.php" method="POST" >
 	    <div class="grupoInputs">
-		<label for="id">Id:</label>
-        <input type="text" name="id"><br>	
+		<label for="usuario">Usuario:</label>
+        <input type="text" name="usuario"><br>	
         </div>
 
 		

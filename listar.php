@@ -15,7 +15,7 @@ include 'menu.php';
 		<caption class="ttitulo">Lista de usuarios</caption>
 		<thead class="ttitulo">
 			<tr>
-			<th>ID</th>
+			<th>id</th>
 			<th>Apellido</th>
 			<th>Nombre</th>
 			<th>Edad</th>

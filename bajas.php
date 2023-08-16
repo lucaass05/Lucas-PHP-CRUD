@@ -8,9 +8,8 @@
 include 'menu.php';
 
 
-$ape = $_POST['apellido'];
-$cor = $_POST['correo'];
-$con = $_POST['contraseña'];
+
+
 
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
@@ -21,7 +20,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena= "DELETE FROM personas  WHERE apellido = '$ape', correo = '$cor', contraseña = '$con'";  
+$cadena= "DELETE FROM personas WHERE  = '$id'";  
 
 $resultado = mysqli_query($Conexion,$cadena);
 

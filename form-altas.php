@@ -27,23 +27,24 @@ include 'menu.php';
 
 		<div class="grupoInputs">
 		<label for="edad">Edad:</label>
-		<input type="text" name="edad"><br>
+		<input type="number" name="edad"><br>
 	    </div>
 
 		<div class="grupoInputs">
-		<label for="nombre">Correo:</label>
+		<label for="correo">Correo:</label>
 		<input type="text" name="correo"><br>
         </div>
 
 		<div class="grupoInputs">
-		<label for="nombre">Contraseña:</label>
-		<input type="text" name="contraseña"><br>
+		<label for="clave">Contraseña:</label>
+		<input type="password" name="clave"><br>
         </div>
 
 		<div class="grupoInputs">
-		<label for="nombre">Nombre de Usuario:</label>
+		<label for="usuario">Nombre de Usuario:</label>
 		<input type="text" name="usuario"><br>
         </div>
+
 
 		<div class="btn-submit">
 		<input type="submit" value="Grabar"><br>

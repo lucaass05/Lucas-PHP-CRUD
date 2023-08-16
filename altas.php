@@ -14,8 +14,9 @@ $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
 $cor = $_POST['correo'];
-$con = $_POST['contraseña'];
+$con = $_POST['clave'];
 $user = $_POST['usuario'];
+
 
 // salida de informacion
 

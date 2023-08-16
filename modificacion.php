@@ -19,12 +19,12 @@ $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
 	echo "la conexion fue exitosa "."<br>";
-
+	
 }else{
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed', correo = '$cor', contraseña = '$con', user = '$user' WHERE apellido = '$ape'";
+$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed', correo = '$cor', clave = '$con', user = '$user' WHERE apellido = '$ape'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

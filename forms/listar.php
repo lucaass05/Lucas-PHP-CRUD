@@ -23,6 +23,7 @@ include '../forms/menu.php';
 			<th>Contraseña</th>
 			<th>Usuario</th>
 			<th>PIN</th>
+			<th>Archivo</th>
 			
 			</tr>
 		</thead>
@@ -37,7 +38,7 @@ $consulta = mysqli_query($Conexion,$cadena);
 
 while(  $registro = mysqli_fetch_row($consulta)   ){
 	echo "<tr class='trmain'>";
-	echo "<th>".$registro[0]."</th>"."<th>".$registro[1]."</th>"."<th>".$registro[2]."</th>"."<th>".$registro[3]."</th><th>".$registro[4]."</th>"."<th>".$registro[5]."</th>"."<th>".$registro[6]."</th>"."<th>".$registro[7]."</th>";
+	echo "<th>".$registro[0]."</th>"."<th>".$registro[1]."</th>"."<th>".$registro[2]."</th>"."<th>".$registro[3]."</th><th>".$registro[4]."</th>"."<th>".$registro[5]."</th>"."<th>".$registro[6]."</th>"."<th>".$registro[7]."</th>"."<th><iimg src='data:image/jpeg;base64,".base64_encode($registro[8])."'width='200px'/></th>";
 	echo "</tr>";
 }
  ?>

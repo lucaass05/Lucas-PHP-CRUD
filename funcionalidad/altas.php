@@ -16,18 +16,25 @@ $cor = $_POST['correo'];
 $con = $_POST['clave'];
 $user = $_POST['usuario'];
 $pin = $_POST['pin'];
+$archivo = $_FILES['archivo']["tmp_name"];
+$archivotam = $_FILES['archivo']["size"];
 
 
 
 // salida de informacion
 
 echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>"."<h3>".$cor."</h3>"."<h3>".$con."</h3>"."<h3>".$user."</h3>"."<h3>".$pin."</h3>";
+if($archivo != "none"){
 
+$fp = fopen($archivo,"rb");
+$contenido = fread($fp,$archivotam);
+$contenido = addslashes($contenido);
+fclose($fp);
 
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO personas(apellido, nombre, edad, correo, clave, usuario, pin) VALUES ('$ape','$nom','$ed','$cor','$con','$user', '$pin')";
+$cadena= "INSERT INTO personas(apellido, nombre, edad, correo, clave, usuario, pin, archivo) VALUES ('$ape','$nom','$ed','$cor','$con','$user', '$pin', '$archivo')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
@@ -37,3 +44,8 @@ if($resultado){
 }else{
 	echo "NO se ha generado un registro"."<br>";
 }
+}
+else
+print("No se puede subir el archivo");
+
+?>

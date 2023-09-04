@@ -50,6 +50,10 @@ include 'menu.php';
 		<input type="number" name="pin"><br>
         </div>
 
+		<div class="grupoInputs">
+		<label for="archivo">Archivo:</label>
+		<input type="file" name="archivo"><br>
+        </div>
 	
 
 

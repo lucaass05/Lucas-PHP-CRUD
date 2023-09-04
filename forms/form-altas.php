@@ -59,7 +59,7 @@ include 'menu.php';
 	</form>
 </div>
 <div class="img">
-	<img src="../phpdeto/img/unnamed.jpg" alt="">
+	<img src="../img/unnamed.jpg" alt="">
 </div>
 	
 	

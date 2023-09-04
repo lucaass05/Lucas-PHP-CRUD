@@ -5,34 +5,38 @@
 
 <?php 
 
-include 'menu.php';
+include '../forms/menu.php';
 
 
 $pin = $_POST['pin'];
-
+$nom = $_POST['nombre'];
+$ed = $_POST['edad'];
+$cor = $_POST['correo'];
+$con = $_POST['clave'];
+$user = $_POST['usuario'];
 
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
 	echo "la conexion fue exitosa "."<br>";
-
+	
 }else{
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena= "DELETE FROM personas WHERE pin  = '$pin'";  
+$cadena = "UPDATE  personas SET nombre = '$nom', edad = '$ed', correo = '$cor', clave = '$con', usuario = '$user' WHERE pin = '$pin'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
-	echo "se ha eliminado un registro"."<br>";
+	echo "se ha modificado un registro"."<br>";
 
 }else{
-	echo "NO se ha eliminado un registro"."<br>";
+	echo "NO se ha modificado un registro"."<br>";
 	echo mysqli_error($Conexion);
 }
-
  ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +46,7 @@ if($resultado){
 	<title>Document</title>
 </head>
 <body>
-	<a href="form-bajas.php">Volver</a>
+	<a href="../forms/form-modificacion.php">Volver</a>
 	
 </body>
 </html>

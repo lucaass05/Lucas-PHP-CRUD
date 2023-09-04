@@ -1,12 +1,12 @@
 <?php
-include 'menu.php';
+include '../forms/menu.php';
 ?>
 <html lang="es">
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Altas</title>
-	<link rel="stylesheet" href="../phpdeto/css/respuestas.css">
+	<link rel="stylesheet" href="../css/respuestas.css">
 	</head>
 	<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
 	<h3 class="tablatitulo">LISTADO DE LOS REGISTRO DE LA TABLA</h3>
@@ -23,6 +23,7 @@ include 'menu.php';
 			<th>Contraseña</th>
 			<th>Usuario</th>
 			<th>PIN</th>
+			
 			</tr>
 		</thead>
 	<?php 

@@ -7,16 +7,16 @@ include 'menu.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Modificacion</title>
-	<link rel="stylesheet" href="../phpdeto/css/formAltas.css">
+	<link rel="stylesheet" href="../css/formAltas.css">
 </head>
 <body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
 
 <div class="container">
 	<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
-	<form class="altaInput" action="modificacion.php" method="POST" >
+	<form class="altaInput" action="../funcionalidad/modificacion.php" method="POST" >
 	<div class="grupoInputs">
-		<label for="apellido">Campo Clave Apellido:</label>
-		<input type="text" name="apellido"><br>	
+		<label for="pin">Campo Clave PIN:</label>
+		<input type="text" name="pin"><br>	
     </div>
 
 		<br><br>
@@ -33,17 +33,17 @@ include 'menu.php';
 	    </div>
 
 		<div class="grupoInputs">
-		<label for="edad">Correo:</label>
+		<label for="correo">Correo:</label>
 		<input type="text" name="correo"><br>
 	    </div>
 
 		<div class="grupoInputs">
-		<label for="edad">Contraseña:</label>
-		<input type="text" name="contraseña"><br>
+		<label for="clave">Contraseña:</label>
+		<input type="password" name="clave"><br>
 	    </div>
 
 		<div class="grupoInputs">
-		<label for="nombre">Nombre de usuario nuevo:</label>
+		<label for="usuario">Nombre de usuario nuevo:</label>
 		<input type="text" name="usuario"><br>
         </div>
 

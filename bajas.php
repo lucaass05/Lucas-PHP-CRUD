@@ -8,7 +8,7 @@
 include 'menu.php';
 
 
-$user = $_POST['usuario'];
+$pin = $_POST['pin'];
 
 
 $base = "gestion";
@@ -20,7 +20,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena= "DELETE FROM personas WHERE  = '$user'";  
+$cadena= "DELETE FROM personas WHERE pin  = '$pin'";  
 
 $resultado = mysqli_query($Conexion,$cadena);
 

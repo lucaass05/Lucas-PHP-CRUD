@@ -16,16 +16,17 @@ $ed = $_POST['edad'];
 $cor = $_POST['correo'];
 $con = $_POST['clave'];
 $user = $_POST['usuario'];
+$pin = $_POST['pin'];
 
 
 // salida de informacion
 
-echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>"."<h3>".$cor."</h3>"."<h3>".$con."</h3>"."<h3>".$user."</h3>";
+echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>"."<h3>".$cor."</h3>"."<h3>".$con."</h3>"."<h3>".$user."</h3>"."<h3>".$pin."</h3>";
 
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO personas(apellido, nombre, edad, correo, clave, user) VALUES ('$ape','$nom','$ed','$cor','$con','$user')";
+$cadena= "INSERT INTO personas(apellido, nombre, edad, correo, clave, usuario, pin) VALUES ('$ape','$nom','$ed','$cor','$con','$user', '$pin')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

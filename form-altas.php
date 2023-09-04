@@ -45,6 +45,11 @@ include 'menu.php';
 		<input type="text" name="usuario"><br>
         </div>
 
+		<div class="grupoInputs">
+		<label for="pin">PIN:</label>
+		<input type="text" name="pin"><br>
+        </div>
+
 
 		<div class="btn-submit">
 		<input type="submit" value="Grabar"><br>

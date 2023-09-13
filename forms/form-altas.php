@@ -14,7 +14,7 @@ include 'menu.php';
 
 <div class="container">
     <h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
-	<form class="altaInput" action="../funcionalidad/altas.php" method="POST" >
+	<form class="altaInput" action="../funcionalidad/altas.php" method="POST" enctype="multipart/form-data">
 		<div class="grupoInputs">
 		<label for="apellido">Apellido:</label>
 		<input type="text" name="apellido"><br>
